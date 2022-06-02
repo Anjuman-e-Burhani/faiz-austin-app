@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { API, Storage } from 'aws-amplify';
-import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import { listItems } from './graphql/queries';
 import { createItem as createItemMutation, deleteItem as deleteItemMutation } from './graphql/mutations';
-
 
 const initialFormState = { name: '', description: '' }
 
@@ -24,7 +22,7 @@ function App() {
     fetchItems();
   }
 
-  async function fetchNotes() {
+  async function fetchItems() {
     const apiData = await API.graphql({ query: listItems });
     const itemsFromApi = apiData.data.listItems.items;
     await Promise.all(itemsFromApi.map(async item => {

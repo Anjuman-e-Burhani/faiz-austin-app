@@ -10,11 +10,6 @@
       "StackName": "amplify-amplify9ad1e83821d14-staging-200537",
       "StackId": "arn:aws:cloudformation:us-east-1:427663071098:stack/amplify-amplify9ad1e83821d14-staging-200537/347fa130-e1e6-11ec-a082-12770515d8bb",
       "AmplifyAppId": "d2f5pqegqrs54j"
-    },
-    "categories": {
-      "auth": {
-        "faizaustinapp65356929": {}
-      }
     }
   }
 }

@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify9ad1e83821d14-staging-200537-authRole",
+      "UnauthRoleArn": "arn:aws:iam::427663071098:role/amplify-amplify9ad1e83821d14-staging-200537-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::427663071098:role/amplify-amplify9ad1e83821d14-staging-200537-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplify9ad1e83821d14-staging-200537-deployment",
+      "UnauthRoleName": "amplify-amplify9ad1e83821d14-staging-200537-unauthRole",
+      "StackName": "amplify-amplify9ad1e83821d14-staging-200537",
+      "StackId": "arn:aws:cloudformation:us-east-1:427663071098:stack/amplify-amplify9ad1e83821d14-staging-200537/347fa130-e1e6-11ec-a082-12770515d8bb",
+      "AmplifyAppId": "d2f5pqegqrs54j"
+    },
+    "categories": {
+      "auth": {
+        "faizaustinapp65356929": {}
+      }
+    }
+  }
+}

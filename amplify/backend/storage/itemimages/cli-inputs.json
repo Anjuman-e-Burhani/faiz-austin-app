@@ -1,0 +1,14 @@
+{
+  "resourceName": "itemimages",
+  "policyUUID": "61634fdd",
+  "bucketName": "faizaustinitemimages",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

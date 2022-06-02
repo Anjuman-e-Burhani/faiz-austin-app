@@ -80,9 +80,8 @@ function App() {
           ))
         }
       </div>
-      <AmplifySignOut />
     </div>
   );
 }
 
-export default withAuthenticator(App);
+export default App;

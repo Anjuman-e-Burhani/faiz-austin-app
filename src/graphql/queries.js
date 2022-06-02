@@ -2,29 +2,31 @@
 // this is an auto generated file. This will be overwritten
 
 export const getItem = /* GraphQL */ `
-  query GetItemo($id: ID!) {
-    getItemo(id: $id) {
+  query GetItem($id: ID!) {
+    getItem(id: $id) {
       id
       name
       description
       isVeg
+      image
       createdAt
       updatedAt
     }
   }
 `;
 export const listItems = /* GraphQL */ `
-  query ListItemos(
-    $filter: ModelItemoFilterInput
+  query ListItems(
+    $filter: ModelItemFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listItemos(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listItems(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
         name
         description
         isVeg
+        image
         createdAt
         updatedAt
       }

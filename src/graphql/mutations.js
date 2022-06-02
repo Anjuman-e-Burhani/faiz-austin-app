@@ -2,45 +2,48 @@
 // this is an auto generated file. This will be overwritten
 
 export const createItem = /* GraphQL */ `
-  mutation CreateItemo(
-    $input: CreateItemoInput!
-    $condition: ModelItemoConditionInput
+  mutation CreateItem(
+    $input: CreateItemInput!
+    $condition: ModelItemConditionInput
   ) {
-    createItemo(input: $input, condition: $condition) {
+    createItem(input: $input, condition: $condition) {
       id
       name
       description
       isVeg
+      image
       createdAt
       updatedAt
     }
   }
 `;
 export const updateItem = /* GraphQL */ `
-  mutation UpdateItemo(
-    $input: UpdateItemoInput!
-    $condition: ModelItemoConditionInput
+  mutation UpdateItem(
+    $input: UpdateItemInput!
+    $condition: ModelItemConditionInput
   ) {
-    updateItemo(input: $input, condition: $condition) {
+    updateItem(input: $input, condition: $condition) {
       id
       name
       description
       isVeg
+      image
       createdAt
       updatedAt
     }
   }
 `;
 export const deleteItem = /* GraphQL */ `
-  mutation DeleteItemo(
-    $input: DeleteItemoInput!
-    $condition: ModelItemoConditionInput
+  mutation DeleteItem(
+    $input: DeleteItemInput!
+    $condition: ModelItemConditionInput
   ) {
-    deleteItemo(input: $input, condition: $condition) {
+    deleteItem(input: $input, condition: $condition) {
       id
       name
       description
       isVeg
+      image
       createdAt
       updatedAt
     }

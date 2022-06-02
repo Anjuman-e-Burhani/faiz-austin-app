@@ -1,7 +1,7 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createItemo = /* GraphQL */ `
+export const createItem = /* GraphQL */ `
   mutation CreateItemo(
     $input: CreateItemoInput!
     $condition: ModelItemoConditionInput
@@ -16,7 +16,7 @@ export const createItemo = /* GraphQL */ `
     }
   }
 `;
-export const updateItemo = /* GraphQL */ `
+export const updateItem = /* GraphQL */ `
   mutation UpdateItemo(
     $input: UpdateItemoInput!
     $condition: ModelItemoConditionInput
@@ -31,7 +31,7 @@ export const updateItemo = /* GraphQL */ `
     }
   }
 `;
-export const deleteItemo = /* GraphQL */ `
+export const deleteItem = /* GraphQL */ `
   mutation DeleteItemo(
     $input: DeleteItemoInput!
     $condition: ModelItemoConditionInput

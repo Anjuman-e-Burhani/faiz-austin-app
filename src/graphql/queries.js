@@ -1,7 +1,7 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const getItemo = /* GraphQL */ `
+export const getItem = /* GraphQL */ `
   query GetItemo($id: ID!) {
     getItemo(id: $id) {
       id
@@ -13,7 +13,7 @@ export const getItemo = /* GraphQL */ `
     }
   }
 `;
-export const listItemos = /* GraphQL */ `
+export const listItems = /* GraphQL */ `
   query ListItemos(
     $filter: ModelItemoFilterInput
     $limit: Int

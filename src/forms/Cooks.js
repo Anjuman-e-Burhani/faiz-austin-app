@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Form, Row, Col, Container } from 'react-bootstrap';
 import { API } from 'aws-amplify';
-import { listCooks } from './graphql/queries';
-import { createCook as createCookMutation } from './graphql/mutations';
-import CookCard from './CookCard';
+import { listCooks } from '../graphql/queries';
+import { createCook as createCookMutation } from '../graphql/mutations';
+import CookCard from '../cards/CookCard';
 
 const initialFormState = { name: '', contact: '', address: '', isActive: true}
 
@@ -50,14 +50,14 @@ function Cooks() {
                     <Row>
                         <Col>
                             <Form.Group className="mb-3" controlId="formGroupName">
-                            <Form.Label>Name</Form.Label>
-                            <Form.Control type="text" placeholder="Enter name" onChange={e => setFormData({ ...formData, 'name': e.target.value})} />
+                                <Form.Label>Name</Form.Label>
+                                <Form.Control type="text" placeholder="Enter name" onChange={e => setFormData({ ...formData, 'name': e.target.value})} />
                             </Form.Group>                    
                         </Col>
                         <Col>
                             <Form.Group className="mb-3" controlId="formGroupContact">
-                            <Form.Label>Contact</Form.Label>
-                            <Form.Control type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Enter cell number" onChange={e => setFormData({ ...formData, 'contact': e.target.value})} />
+                                <Form.Label>Contact</Form.Label>
+                                <Form.Control type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Enter cell number" onChange={e => setFormData({ ...formData, 'contact': e.target.value})} />
                             </Form.Group>
                         </Col>
                     </Row>
@@ -67,7 +67,7 @@ function Cooks() {
                             <Form.Control type="text" placeholder="Enter address" onChange={e => setFormData({ ...formData, 'address': e.target.value})} />                
                         </Form.Group>
                     </Row>
-                    <Button as={Col} variant="primary" type="submit" onClick={createCook}>Submit</Button>
+                    <Button as={Col} variant="primary" type="submit" onClick={createCook}>Save</Button>
                 </Container>
             </Form>
         </div>

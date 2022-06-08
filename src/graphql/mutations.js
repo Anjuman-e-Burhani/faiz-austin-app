@@ -9,8 +9,8 @@ export const createDish = /* GraphQL */ `
     createDish(input: $input, condition: $condition) {
       id
       name
+      category
       description
-      isVeg
       image
       createdAt
       updatedAt
@@ -25,8 +25,8 @@ export const updateDish = /* GraphQL */ `
     updateDish(input: $input, condition: $condition) {
       id
       name
+      category
       description
-      isVeg
       image
       createdAt
       updatedAt
@@ -41,8 +41,8 @@ export const deleteDish = /* GraphQL */ `
     deleteDish(input: $input, condition: $condition) {
       id
       name
+      category
       description
-      isVeg
       image
       createdAt
       updatedAt

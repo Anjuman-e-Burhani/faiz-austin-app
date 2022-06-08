@@ -6,8 +6,8 @@ export const onCreateDish = /* GraphQL */ `
     onCreateDish {
       id
       name
+      category
       description
-      isVeg
       image
       createdAt
       updatedAt
@@ -19,8 +19,8 @@ export const onUpdateDish = /* GraphQL */ `
     onUpdateDish {
       id
       name
+      category
       description
-      isVeg
       image
       createdAt
       updatedAt
@@ -32,8 +32,8 @@ export const onDeleteDish = /* GraphQL */ `
     onDeleteDish {
       id
       name
+      category
       description
-      isVeg
       image
       createdAt
       updatedAt

@@ -5,8 +5,8 @@ input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONL
 type Dish @model {
   id: ID!
   name: String!
+  category: String!
   description: String
-  isVeg: Boolean
   image: String
 }
 

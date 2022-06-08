@@ -6,8 +6,8 @@ export const getDish = /* GraphQL */ `
     getDish(id: $id) {
       id
       name
+      category
       description
-      isVeg
       image
       createdAt
       updatedAt
@@ -24,8 +24,8 @@ export const listDishes = /* GraphQL */ `
       items {
         id
         name
+        category
         description
-        isVeg
         image
         createdAt
         updatedAt

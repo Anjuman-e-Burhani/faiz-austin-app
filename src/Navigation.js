@@ -1,6 +1,7 @@
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav, Container, Button } from 'react-bootstrap';
+import { withAuthenticator } from '@aws-amplify/ui-react';
 
-function Navigation() {
+function Navigation({ signOut }) {
     return (
         <div className='Navigation'>
             <Navbar collapseOnSelect fixed='top' expand='lg' bg='dark' variant='dark'>
@@ -16,9 +17,10 @@ function Navigation() {
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
+                <Button onClick={signOut}>Sign Out</Button>
             </Navbar>
         </div>
     )
 }
 
-export default Navigation;
+export default withAuthenticator(Navigation);

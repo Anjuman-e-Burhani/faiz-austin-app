@@ -1,7 +1,6 @@
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
-import { withAuthenticator } from '@aws-amplify/ui-react';
 
-function Navigation({ signOut }) {
+function Navigation({signOut}) {
     return (
         <div className='Navigation'>
             <Navbar collapseOnSelect fixed='top' expand='lg' bg='dark' variant='dark'>
@@ -14,6 +13,7 @@ function Navigation({ signOut }) {
                             <Nav.Link href='/menu'>Menu</Nav.Link>
                             <Nav.Link href='/dishes'>Dishes</Nav.Link>
                             <Nav.Link href='/cooks'>Cooks</Nav.Link>
+                            <Nav.Link href='/planner'>Plan</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -23,4 +23,4 @@ function Navigation({ signOut }) {
     )
 }
 
-export default withAuthenticator(Navigation);
+export default Navigation;

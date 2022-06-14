@@ -67,3 +67,72 @@ export const listCooks = /* GraphQL */ `
     }
   }
 `;
+export const getMenu = /* GraphQL */ `
+  query GetMenu($id: ID!) {
+    getMenu(id: $id) {
+      id
+      serveOn
+      pickupOn
+      dish {
+        id
+        name
+        category
+        description
+        image
+        createdAt
+        updatedAt
+      }
+      cook {
+        id
+        name
+        contact
+        address
+        isActive
+        createdAt
+        updatedAt
+      }
+      isActive
+      isPublished
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const listMenus = /* GraphQL */ `
+  query ListMenus(
+    $filter: ModelMenuFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listMenus(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        serveOn
+        pickupOn
+        dish {
+          id
+          name
+          category
+          description
+          image
+          createdAt
+          updatedAt
+        }
+        cook {
+          id
+          name
+          contact
+          address
+          isActive
+          createdAt
+          updatedAt
+        }
+        isActive
+        isPublished
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+  }
+`;

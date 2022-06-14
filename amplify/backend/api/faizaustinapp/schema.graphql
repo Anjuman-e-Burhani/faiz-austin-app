@@ -17,3 +17,13 @@ type Cook @model {
   address: String!
   isActive: Boolean
 }
+
+type Menu @model {
+  id: ID!
+  serveOn: AWSDate!
+  pickupOn: AWSDate!
+  dish: Dish!
+  cook: Cook!
+  isActive: Boolean!
+  isPublished: Boolean!
+}

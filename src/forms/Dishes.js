@@ -92,17 +92,15 @@ function Dishes() {
                     <Button as={Col} variant="primary" type="submit" onClick={createDish}>Save</Button>
                 </Container>
             </Form>
-            <Container fluid='false'>
+            <Container>
                 <Row>
-                    <div style={{marginBottom: 30}}>
-                        {
-                            dishes.map(dish => (
-                                <Col>
-                                    <DishCard dish={dish}/>
-                                </Col>
-                            ))
-                        }
-                    </div>
+                    {
+                        dishes.map(dish => (
+                            <Col fluid='false' id={dish.id}>
+                                <DishCard key={dish.id} dish={dish}/>
+                            </Col>
+                        ))
+                    }
                 </Row>
             </Container>
         </div>

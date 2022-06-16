@@ -22,8 +22,8 @@ type Menu @model {
   id: ID!
   serveOn: AWSDate!
   pickupOn: AWSDate!
-  dish: Dish!
-  cook: Cook!
+  dish: Dish! @hasOne
+  cook: Cook! @hasOne
   isActive: Boolean!
   isPublished: Boolean!
 }

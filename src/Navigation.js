@@ -10,7 +10,7 @@ function Navigation({signOut}) {
                     <Navbar.Collapse id='basic-navbar-nav'>
                         <Nav className='me-auto'>
                             <Nav.Link href='/'>Home</Nav.Link>
-                            <Nav.Link href='/menu'>Menu</Nav.Link>
+                            <Nav.Link href='/signup'>Signup</Nav.Link>
                             <Nav.Link href='/dishes'>Dishes</Nav.Link>
                             <Nav.Link href='/cooks'>Cooks</Nav.Link>
                             <Nav.Link href='/planner'>Plan</Nav.Link>

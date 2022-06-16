@@ -2,7 +2,6 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 
 function DishCard(props) {
-
     return (
         <div className='DishCard'>
             <Card style={{ width: '18rem' }}>

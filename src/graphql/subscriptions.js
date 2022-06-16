@@ -107,6 +107,8 @@ export const onCreateMenu = /* GraphQL */ `
       isPublished
       createdAt
       updatedAt
+      menuDishId
+      menuCookId
     }
   }
 `;
@@ -138,6 +140,8 @@ export const onUpdateMenu = /* GraphQL */ `
       isPublished
       createdAt
       updatedAt
+      menuDishId
+      menuCookId
     }
   }
 `;
@@ -169,6 +173,8 @@ export const onDeleteMenu = /* GraphQL */ `
       isPublished
       createdAt
       updatedAt
+      menuDishId
+      menuCookId
     }
   }
 `;

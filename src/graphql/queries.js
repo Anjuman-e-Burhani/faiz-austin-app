@@ -95,6 +95,8 @@ export const getMenu = /* GraphQL */ `
       isPublished
       createdAt
       updatedAt
+      menuDishId
+      menuCookId
     }
   }
 `;
@@ -131,6 +133,8 @@ export const listMenus = /* GraphQL */ `
         isPublished
         createdAt
         updatedAt
+        menuDishId
+        menuCookId
       }
       nextToken
     }

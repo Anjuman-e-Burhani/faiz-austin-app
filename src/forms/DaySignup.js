@@ -1,38 +1,44 @@
 import React from 'react';
-import { Row, Col, Container, Form } from 'react-bootstrap';
+import { Col, Form, Card, CardGroup, Button } from 'react-bootstrap';
 
 function DaySignup(props) {
+
+    let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
     return (
-        <div className='SignupForm p-5'>
+        <div className='SignupForm p-5' style={{marginBottom: 30, marginTop: 30}}>
+            <CardGroup>
             {
                 props.menu.map(oneItem => {
                     return (
-                        <div className='OneItemSignup'>
-                            <Form style={{marginBottom: 30, marginTop: 30}}>
-                            <Container fluid='false'>
-                                <Row>
-                                    <Col>
-                                        <Form.Group className="mb-3" controlId="formGroupName">
-                                            <Form.Label>{oneItem.serveOn}</Form.Label>
-                                        </Form.Group>
-                                    </Col>                                            
-                                    <Col>
+                        <Col>
+                            <Card border="dark" style={{ width: '24rem' }}>
+                                <Card.Header>Item for: { new Date(oneItem.serveOn).toLocaleDateString('en-US', options) }</Card.Header>
+                                <Card.Img variant="top" src={oneItem.dish.image} />
+                                <Card.Body>
+                                    <Card.Title>{oneItem.dish.name}</Card.Title>
+                                    <Card.Text>{oneItem.dish.description}</Card.Text>
+                                    <Form>
                                         <Form.Group className="mb-3" controlId="formGroupCategory">
-                                            <Form.Label>Size</Form.Label>
                                             <Form.Select aria-label="Size">
                                                 <option value="Large">Large</option>
                                                 <option value="Small">Small</option>
-                                                <option value="Opt Out">Opt Out</option>
+                                                <option value="Small">Opt Out</option>
                                             </Form.Select>  
                                         </Form.Group>                      
-                                    </Col>                                            
-                                </Row>
-                            </Container>
-                            </Form>    
-                        </div>
+                                    </Form>
+                                </Card.Body>
+                                <div className="text-center">
+                                    <Button variant="primary" style={{marginBottom: 10}}>Save</Button>
+                                </div>
+                                <Card.Footer className="text-muted">Pickup on: { new Date(oneItem.pickupOn).toLocaleDateString('en-US', options) }</Card.Footer>
+                            </Card>
+                        </Col>
+
                     );
                 })
             }
+            </CardGroup>
         </div>
     );
 }

@@ -88,13 +88,13 @@ function Planner() {
                     <Row>
                         <Col>
                             <Form.Group className="mb-3" controlId="formGroupServedOn">
-                                <Form.Label>Menu Served On</Form.Label>
+                                <Form.Label>Item For Date: </Form.Label>
                                 <Form.Control type="date" onChange={e => setFormData({ ...formData, 'serveOn': e.target.value})} />
                             </Form.Group>
                         </Col>
                         <Col>                        
                             <Form.Group className="mb-3" controlId="formGroupPickupOn">
-                                <Form.Label>Pickup On</Form.Label>
+                                <Form.Label>Item Should Be Picked On: </Form.Label>
                                 <Form.Control type="date" onChange={e => setFormData({ ...formData, 'pickupOn': e.target.value})} />
                             </Form.Group>                        
                         </Col>
@@ -133,11 +133,11 @@ function Planner() {
                     }
                     <Row>
                         <Col className='pt-3 d-flex justify-content-between'>
-                            <Button variant="warning" onClick={handleAddFields}>Add More</Button>
+                            <Button variant="warning" onClick={handleAddFields}>Add Another Dish</Button>
                             <Button variant="danger" onClick={handleRemoveFields}>Remove</Button>
                         </Col>
                     </Row>
-                    <Button as={Col} variant="primary" type="submit" onClick={createPlan}>Save</Button>
+                    <Button as={Col} style={{marginTop: 20}}variant="primary" type="submit" onClick={createPlan}>Save</Button>
                     <Row>
                         {
                             plans.map(plan => (

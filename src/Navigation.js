@@ -1,6 +1,6 @@
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 
-function Navigation({signOut}) {
+function Navigation() {
     return (
         <div className='Navigation'>
             <Navbar collapseOnSelect fixed='top' expand='lg' bg='dark' variant='dark'>
@@ -17,7 +17,6 @@ function Navigation({signOut}) {
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
-                <Button onClick={signOut}>Sign Out</Button>
             </Navbar>
         </div>
     )

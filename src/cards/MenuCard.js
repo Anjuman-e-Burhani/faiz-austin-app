@@ -25,6 +25,7 @@ function MenuCard(props) {
                 }
             )
         );
+        window.location.reload(false);
     }
 
     return (
